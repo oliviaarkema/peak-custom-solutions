@@ -66,3 +66,91 @@ function showNextSlide() {
 }
 
 setInterval(showNextSlide, 10000);
+
+/* =========================
+   GALLERY LIGHTBOX
+========================= */
+
+const lightbox     = document.getElementById('lightbox');
+const lightboxImg  = document.getElementById('lightbox-img');
+const lightboxCounter = document.getElementById('lightbox-counter');
+const lightboxClose = document.getElementById('lightbox-close');
+const lightboxPrev = document.getElementById('lightbox-prev');
+const lightboxNext = document.getElementById('lightbox-next');
+
+if (lightbox) {
+
+  const galleryImgs = [...document.querySelectorAll('.gallery-item img')];
+  let current = 0;
+
+  function openLightbox(index) {
+    current = index;
+    const img = galleryImgs[current];
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt;
+    lightboxCounter.textContent = (current + 1) + ' / ' + galleryImgs.length;
+    lightbox.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  function showPrev() {
+    current = (current - 1 + galleryImgs.length) % galleryImgs.length;
+    openLightbox(current);
+  }
+
+  function showNext() {
+    current = (current + 1) % galleryImgs.length;
+    openLightbox(current);
+  }
+
+  galleryImgs.forEach((img, i) => {
+    img.parentElement.addEventListener('click', () => openLightbox(i));
+  });
+
+  lightboxClose.addEventListener('click', closeLightbox);
+  lightboxPrev.addEventListener('click', showPrev);
+  lightboxNext.addEventListener('click', showNext);
+
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeLightbox();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (!lightbox.classList.contains('active')) return;
+    if (e.key === 'ArrowLeft')  showPrev();
+    if (e.key === 'ArrowRight') showNext();
+    if (e.key === 'Escape')     closeLightbox();
+  });
+
+}
+
+/* =========================
+   LISTINGS TAB FILTER
+========================= */
+
+const tabBtns = document.querySelectorAll('.tab-btn');
+const listingCards = document.querySelectorAll('.listing-card-link');
+
+tabBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+
+    tabBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    const filter = btn.dataset.filter;
+
+    listingCards.forEach(card => {
+      if (filter === 'all' || card.dataset.category === filter) {
+        card.classList.remove('hidden');
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+
+  });
+});
