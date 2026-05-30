@@ -100,14 +100,14 @@
 </section>
 
 <!-- =========================
-     FEATURED INVENTORY
+     CURRENT EQUIPMENT LISTINGS
 ========================= -->
 
-<section class="section-light">
+<section class="section-light listings-section">
 
   <div class="container">
 
-    <div class="flex-between">
+    <div class="flex-between listings-header">
 
       <div>
 
@@ -127,99 +127,489 @@
 
     </div>
 
-    <div class="card-grid mt-lg">
+    <!-- Filter Tabs -->
+    <div class="listings-tabs mt-lg">
 
-      <!-- Listing 1 -->
-      <div class="card listing-card">
-
-        <img src="images/listing-placeholder-1.jpg"
-             alt="John Deere Tractor">
-
-        <div class="listing-content mt-md">
-
-          <p class="listing-category">
-            Agriculture Equipment
-          </p>
-
-          <h3>
-            John Deere Tractor
-          </h3>
-
-          <p>
-            Low-hour agricultural tractor with premium features
-            and financing options available.
-          </p>
-
-          <a href="contact.html"
-             class="btn btn-primary mt-md">
-            Request Information
-          </a>
-
-        </div>
-
-      </div>
-
-      <!-- Listing 2 -->
-      <div class="card listing-card">
-
-        <img src="images/listing-placeholder-2.jpg"
-             alt="Construction Equipment">
-
-        <div class="listing-content mt-md">
-
-          <p class="listing-category">
-            Construction Equipment
-          </p>
-
-          <h3>
-            Skid Steer Loader
-          </h3>
-
-          <p>
-            Reliable construction equipment ready for commercial,
-            agricultural, or site work applications.
-          </p>
-
-          <a href="contact.html"
-             class="btn btn-primary mt-md">
-            Request Information
-          </a>
-
-        </div>
-
-      </div>
-
-      <!-- Listing 3 -->
-      <div class="card listing-card">
-
-        <img src="images/listing-placeholder-3.jpg"
-             alt="Dump Trailer">
-
-        <div class="listing-content mt-md">
-
-          <p class="listing-category">
-            Transportation Equipment
-          </p>
-
-          <h3>
-            Heavy Duty Dump Trailer
-          </h3>
-
-          <p>
-            Commercial-grade trailer inventory available
-            with transportation and financing support.
-          </p>
-
-          <a href="contact.html"
-             class="btn btn-primary mt-md">
-            Request Information
-          </a>
-
-        </div>
-
-      </div>
+      <button class="tab-btn active" data-filter="all">All <span class="tab-count">24</span></button>
+      <button class="tab-btn" data-filter="combines">Combines &amp; Harvesting <span class="tab-count">6</span></button>
+      <button class="tab-btn" data-filter="tractors">Tractors &amp; Planters <span class="tab-count">3</span></button>
+      <button class="tab-btn" data-filter="tillage">Tillage &amp; Sprayers <span class="tab-count">2</span></button>
+      <button class="tab-btn" data-filter="hay">Hay &amp; Forage <span class="tab-count">3</span></button>
+      <button class="tab-btn" data-filter="wagons">Wagons &amp; Trailers <span class="tab-count">6</span></button>
+      <button class="tab-btn" data-filter="specialty">Specialty &amp; Other <span class="tab-count">4</span></button>
 
     </div>
+
+    <!-- Listings Grid -->
+    <div class="listings-grid mt-lg" id="listings-grid">
+
+      <!-- ===== COMBINES & HARVESTING ===== -->
+
+      <a href="https://www.machinerypete.com/details/combines/1998/john-deere/9510/22172426"
+         target="_blank" rel="noopener noreferrer"
+         class="listing-card-link" data-category="combines">
+        <div class="listing-card-new">
+          <div class="listing-img-wrap">
+            <img src="https://assets.machinerypete.com/uploads/image/processed_image/54814829/61547501-f2bf-47ec-81b1-7f999ecc6ec120260501-2-6dgtqy"
+                 alt="1998 John Deere 9510 Combine">
+            <span class="listing-badge">Combine</span>
+          </div>
+          <div class="listing-card-body">
+            <h3>1998 John Deere 9510</h3>
+            <p class="listing-price">$38,900</p>
+            <p class="listing-detail">4,447 hrs &nbsp;·&nbsp; Cedar Springs, MI</p>
+            <span class="listing-cta">View on Machinery Pete &rarr;</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://www.machinerypete.com/details/combines/2012/john-deere/s680/22105201"
+         target="_blank" rel="noopener noreferrer"
+         class="listing-card-link" data-category="combines">
+        <div class="listing-card-new">
+          <div class="listing-img-wrap">
+            <img src="https://assets.machinerypete.com/uploads/image/processed_image/52710272/05c4de3d-a556-4197-ac3b-f4d8f316c7e320260317-2-n16i8s"
+                 alt="2012 John Deere S680 Combine">
+            <span class="listing-badge">Combine</span>
+          </div>
+          <div class="listing-card-body">
+            <h3>2012 John Deere S680</h3>
+            <p class="listing-price">$74,900</p>
+            <p class="listing-detail">5,097 hrs &nbsp;·&nbsp; Cedar Springs, MI</p>
+            <span class="listing-cta">View on Machinery Pete &rarr;</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://www.machinerypete.com/details/corn-heads/2004/john-deere/1293/22103431"
+         target="_blank" rel="noopener noreferrer"
+         class="listing-card-link" data-category="combines">
+        <div class="listing-card-new">
+          <div class="listing-img-wrap">
+            <img src="https://assets.machinerypete.com/uploads/image/processed_image/52673115/e74d1f93-00c5-42f0-a2f0-fbc2fb71759820260316-2-9jdk32"
+                 alt="2004 John Deere 1293 Corn Head">
+            <span class="listing-badge">Corn Head</span>
+          </div>
+          <div class="listing-card-body">
+            <h3>2004 John Deere 1293</h3>
+            <p class="listing-price">$15,900</p>
+            <p class="listing-detail">Cedar Springs, MI</p>
+            <span class="listing-cta">View on Machinery Pete &rarr;</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://www.machinerypete.com/details/corn-heads/2003/john-deere/1290/21959371"
+         target="_blank" rel="noopener noreferrer"
+         class="listing-card-link" data-category="combines">
+        <div class="listing-card-new">
+          <div class="listing-img-wrap">
+            <img src="https://assets.machinerypete.com/uploads/image/processed_image/47885769/42b58b85-e830-40c3-825c-87e8182c67fb20251110-2-cpbiks"
+                 alt="2003 John Deere 1290 Corn Head">
+            <span class="listing-badge">Corn Head</span>
+          </div>
+          <div class="listing-card-body">
+            <h3>2003 John Deere 1290</h3>
+            <p class="listing-price">$17,500</p>
+            <p class="listing-detail">Cedar Springs, MI</p>
+            <span class="listing-cta">View on Machinery Pete &rarr;</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://www.machinerypete.com/details/platforms/2006/john-deere/625f/22172441"
+         target="_blank" rel="noopener noreferrer"
+         class="listing-card-link" data-category="combines">
+        <div class="listing-card-new">
+          <div class="listing-img-wrap">
+            <img src="https://assets.machinerypete.com/uploads/image/processed_image/54816801/9d1b7348-c9e4-423a-b2db-32013739b6cc20260501-2-f0e7xl"
+                 alt="2006 John Deere 625F Platform">
+            <span class="listing-badge">Platform</span>
+          </div>
+          <div class="listing-card-body">
+            <h3>2006 John Deere 625F</h3>
+            <p class="listing-price">$15,900</p>
+            <p class="listing-detail">Cedar Springs, MI</p>
+            <span class="listing-cta">View on Machinery Pete &rarr;</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://www.machinerypete.com/details/platforms/2006/john-deere/630f/22103416"
+         target="_blank" rel="noopener noreferrer"
+         class="listing-card-link" data-category="combines">
+        <div class="listing-card-new">
+          <div class="listing-img-wrap">
+            <img src="https://assets.machinerypete.com/uploads/image/processed_image/52672237/eb7ec0b8-9b52-4689-8bde-eb90fc0a8f3720260316-2-wmng38"
+                 alt="2006 John Deere 630F Platform">
+            <span class="listing-badge">Platform</span>
+          </div>
+          <div class="listing-card-body">
+            <h3>2006 John Deere 630F</h3>
+            <p class="listing-price">$7,900</p>
+            <p class="listing-detail">Cedar Springs, MI</p>
+            <span class="listing-cta">View on Machinery Pete &rarr;</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- ===== TRACTORS & PLANTERS ===== -->
+
+      <a href="https://www.machinerypete.com/details/175-299-hp/2018/john-deere/8245r/22105203"
+         target="_blank" rel="noopener noreferrer"
+         class="listing-card-link" data-category="tractors">
+        <div class="listing-card-new">
+          <div class="listing-img-wrap">
+            <img src="https://assets.machinerypete.com/uploads/image/processed_image/52710353/9acd6acf-8bb2-4c30-af69-9bce440babfb20260317-2-flmyfa"
+                 alt="2018 John Deere 8245R Tractor">
+            <span class="listing-badge">Tractor</span>
+          </div>
+          <div class="listing-card-body">
+            <h3>2018 John Deere 8245R</h3>
+            <p class="listing-price">$112,500</p>
+            <p class="listing-detail">7,669 hrs &nbsp;·&nbsp; Cedar Springs, MI</p>
+            <span class="listing-cta">View on Machinery Pete &rarr;</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://www.machinerypete.com/details/planters/2019/kinze/3600/22056472"
+         target="_blank" rel="noopener noreferrer"
+         class="listing-card-link" data-category="tractors">
+        <div class="listing-card-new">
+          <div class="listing-img-wrap">
+            <img src="https://assets.machinerypete.com/uploads/image/processed_image/51814771/e4824484-7108-48a4-8dbc-6d2c0e259ae620260221-2-er6lje"
+                 alt="2019 Kinze 3600 Planter">
+            <span class="listing-badge">Planter</span>
+          </div>
+          <div class="listing-card-body">
+            <h3>2019 Kinze 3600</h3>
+            <p class="listing-price">$80,000</p>
+            <p class="listing-detail">Cedar Springs, MI</p>
+            <span class="listing-cta">View on Machinery Pete &rarr;</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://www.machinerypete.com/details/planters/2005/john-deere/1760/22056473"
+         target="_blank" rel="noopener noreferrer"
+         class="listing-card-link" data-category="tractors">
+        <div class="listing-card-new">
+          <div class="listing-img-wrap">
+            <img src="https://assets.machinerypete.com/uploads/image/processed_image/51814790/47667c55-dcf7-46a5-aaec-e5ca3b3748a220260221-2-oix7wt"
+                 alt="2005 John Deere 1760 Planter">
+            <span class="listing-badge">Planter</span>
+          </div>
+          <div class="listing-card-body">
+            <h3>2005 John Deere 1760</h3>
+            <p class="listing-price">$28,900</p>
+            <p class="listing-detail">Cedar Springs, MI</p>
+            <span class="listing-cta">View on Machinery Pete &rarr;</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- ===== TILLAGE & SPRAYERS ===== -->
+
+      <a href="https://www.machinerypete.com/details/pull-type-sprayers/2002/redball/670-1200/22172470"
+         target="_blank" rel="noopener noreferrer"
+         class="listing-card-link" data-category="tillage">
+        <div class="listing-card-new">
+          <div class="listing-img-wrap">
+            <img src="https://assets.machinerypete.com/uploads/image/processed_image/54816846/f17f9eea-c72c-4a80-8abf-0e5696bcfbdf20260501-2-zvr5xr"
+                 alt="2002 Redball 670-1200 Sprayer">
+            <span class="listing-badge">Sprayer</span>
+          </div>
+          <div class="listing-card-body">
+            <h3>2002 Redball 670-1200</h3>
+            <p class="listing-price">$11,500</p>
+            <p class="listing-detail">Cedar Springs, MI</p>
+            <span class="listing-cta">View on Machinery Pete &rarr;</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://www.machinerypete.com/details/disks/2001/sunflower/1434-23/22103422"
+         target="_blank" rel="noopener noreferrer"
+         class="listing-card-link" data-category="tillage">
+        <div class="listing-card-new">
+          <div class="listing-img-wrap">
+            <div class="img-coming-soon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span>Image Coming Soon</span>
+            </div>
+            <span class="listing-badge">Disk</span>
+          </div>
+          <div class="listing-card-body">
+            <h3>2001 Sunflower 1434-23</h3>
+            <p class="listing-price">$15,900</p>
+            <p class="listing-detail">Cedar Springs, MI</p>
+            <span class="listing-cta">View on Machinery Pete &rarr;</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- ===== HAY & FORAGE ===== -->
+
+      <a href="https://www.machinerypete.com/details/forage-wagons/2023/meyer/8124rt/21929565"
+         target="_blank" rel="noopener noreferrer"
+         class="listing-card-link" data-category="hay">
+        <div class="listing-card-new">
+          <div class="listing-img-wrap">
+            <img src="images/Website Meyer 2.jpg"
+                 alt="2023 Meyer 8124RT Forage Wagon">
+            <span class="listing-badge">Forage Wagon</span>
+          </div>
+          <div class="listing-card-body">
+            <h3>2023 Meyer 8124RT</h3>
+            <p class="listing-price">$49,995</p>
+            <p class="listing-detail">Cedar Springs, MI</p>
+            <span class="listing-cta">View on Machinery Pete &rarr;</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://www.machinerypete.com/details/forage-wagons/2022/meyer/8124rt/21929566"
+         target="_blank" rel="noopener noreferrer"
+         class="listing-card-link" data-category="hay">
+        <div class="listing-card-new">
+          <div class="listing-img-wrap">
+            <img src="images/Website Meyer.jpg"
+                 alt="2022 Meyer 8124RT Forage Wagon">
+            <span class="listing-badge">Forage Wagon</span>
+          </div>
+          <div class="listing-card-body">
+            <h3>2022 Meyer 8124RT</h3>
+            <p class="listing-price">$46,995</p>
+            <p class="listing-detail">Cedar Springs, MI</p>
+            <span class="listing-cta">View on Machinery Pete &rarr;</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://www.machinerypete.com/details/mergers/2015/h-s/tfm2135/21981750"
+         target="_blank" rel="noopener noreferrer"
+         class="listing-card-link" data-category="hay">
+        <div class="listing-card-new">
+          <div class="listing-img-wrap">
+            <div class="img-coming-soon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span>Image Coming Soon</span>
+            </div>
+            <span class="listing-badge">Merger</span>
+          </div>
+          <div class="listing-card-body">
+            <h3>2015 H&amp;S TFM2135</h3>
+            <p class="listing-price">$44,500</p>
+            <p class="listing-detail">Cedar Springs, MI</p>
+            <span class="listing-cta">View on Machinery Pete &rarr;</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- ===== WAGONS & TRAILERS ===== -->
+
+      <a href="https://www.machinerypete.com/details/gravity-wagons/2023/killbros/387/21912811"
+         target="_blank" rel="noopener noreferrer"
+         class="listing-card-link" data-category="wagons">
+        <div class="listing-card-new">
+          <div class="listing-img-wrap">
+            <div class="img-coming-soon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span>Image Coming Soon</span>
+            </div>
+            <span class="listing-badge">Gravity Wagon</span>
+          </div>
+          <div class="listing-card-body">
+            <h3>2023 Killbros 387</h3>
+            <p class="listing-price">$11,500</p>
+            <p class="listing-detail">Cedar Springs, MI</p>
+            <span class="listing-cta">View on Machinery Pete &rarr;</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://www.machinerypete.com/details/gravity-wagons/2015/killbros/387/22105074"
+         target="_blank" rel="noopener noreferrer"
+         class="listing-card-link" data-category="wagons">
+        <div class="listing-card-new">
+          <div class="listing-img-wrap">
+            <div class="img-coming-soon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span>Image Coming Soon</span>
+            </div>
+            <span class="listing-badge">Gravity Wagon</span>
+          </div>
+          <div class="listing-card-body">
+            <h3>2015 Killbros 387</h3>
+            <p class="listing-price">$8,900</p>
+            <p class="listing-detail">Cedar Springs, MI</p>
+            <span class="listing-cta">View on Machinery Pete &rarr;</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://www.machinerypete.com/details/gravity-wagons/2013/killbros/387/21912810"
+         target="_blank" rel="noopener noreferrer"
+         class="listing-card-link" data-category="wagons">
+        <div class="listing-card-new">
+          <div class="listing-img-wrap">
+            <div class="img-coming-soon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span>Image Coming Soon</span>
+            </div>
+            <span class="listing-badge">Gravity Wagon</span>
+          </div>
+          <div class="listing-card-body">
+            <h3>2013 Killbros 387</h3>
+            <p class="listing-price">$8,500</p>
+            <p class="listing-detail">Cedar Springs, MI</p>
+            <span class="listing-cta">View on Machinery Pete &rarr;</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://www.machinerypete.com/details/header-trailers/2022/unverferth/ht30/22103525"
+         target="_blank" rel="noopener noreferrer"
+         class="listing-card-link" data-category="wagons">
+        <div class="listing-card-new">
+          <div class="listing-img-wrap">
+            <div class="img-coming-soon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span>Image Coming Soon</span>
+            </div>
+            <span class="listing-badge">Header Trailer</span>
+          </div>
+          <div class="listing-card-body">
+            <h3>2022 Unverferth HT30</h3>
+            <p class="listing-price">$6,250</p>
+            <p class="listing-detail">Cedar Springs, MI</p>
+            <span class="listing-cta">View on Machinery Pete &rarr;</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://www.machinerypete.com/details/header-trailers/2020/unverferth/ht25/22103418"
+         target="_blank" rel="noopener noreferrer"
+         class="listing-card-link" data-category="wagons">
+        <div class="listing-card-new">
+          <div class="listing-img-wrap">
+            <div class="img-coming-soon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span>Image Coming Soon</span>
+            </div>
+            <span class="listing-badge">Header Trailer</span>
+          </div>
+          <div class="listing-card-body">
+            <h3>2020 Unverferth HT25</h3>
+            <p class="listing-price">$5,500</p>
+            <p class="listing-detail">Cedar Springs, MI</p>
+            <span class="listing-cta">View on Machinery Pete &rarr;</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://www.machinerypete.com/details/header-trailers/1999/unverferth/ht25/22172471"
+         target="_blank" rel="noopener noreferrer"
+         class="listing-card-link" data-category="wagons">
+        <div class="listing-card-new">
+          <div class="listing-img-wrap">
+            <div class="img-coming-soon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span>Image Coming Soon</span>
+            </div>
+            <span class="listing-badge">Header Trailer</span>
+          </div>
+          <div class="listing-card-body">
+            <h3>1999 Unverferth HT25</h3>
+            <p class="listing-price">$3,200</p>
+            <p class="listing-detail">Cedar Springs, MI</p>
+            <span class="listing-cta">View on Machinery Pete &rarr;</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- ===== SPECIALTY & OTHER ===== -->
+
+      <a href="https://www.facebook.com/marketplace/profile/1832906264/"
+         target="_blank" rel="noopener noreferrer"
+         class="listing-card-link" data-category="specialty">
+        <div class="listing-card-new">
+          <div class="listing-img-wrap">
+            <div class="img-coming-soon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span>Image Coming Soon</span>
+            </div>
+            <span class="listing-badge">Powersports</span>
+          </div>
+          <div class="listing-card-body">
+            <h3>2024.5/2025 Husqvarna FC450</h3>
+            <p class="listing-price">$6,995</p>
+            <p class="listing-detail">Factory Edition &nbsp;·&nbsp; Cedar Springs, MI</p>
+            <span class="listing-cta">View on Facebook &rarr;</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://www.machinerypete.com/details/drills/1997/john-deere/750/22105071"
+         target="_blank" rel="noopener noreferrer"
+         class="listing-card-link" data-category="specialty">
+        <div class="listing-card-new">
+          <div class="listing-img-wrap">
+            <div class="img-coming-soon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span>Image Coming Soon</span>
+            </div>
+            <span class="listing-badge">Drill</span>
+          </div>
+          <div class="listing-card-body">
+            <h3>1997 John Deere 750</h3>
+            <p class="listing-price">$17,900</p>
+            <p class="listing-detail">Cedar Springs, MI</p>
+            <span class="listing-cta">View on Machinery Pete &rarr;</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://www.machinerypete.com/details/irrigation/ag-rain/traveler/22172472"
+         target="_blank" rel="noopener noreferrer"
+         class="listing-card-link" data-category="specialty">
+        <div class="listing-card-new">
+          <div class="listing-img-wrap">
+            <div class="img-coming-soon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span>Image Coming Soon</span>
+            </div>
+            <span class="listing-badge">Irrigation</span>
+          </div>
+          <div class="listing-card-body">
+            <h3>Ag-Rain Traveler</h3>
+            <p class="listing-price">$3,500</p>
+            <p class="listing-detail">Cedar Springs, MI</p>
+            <span class="listing-cta">View on Machinery Pete &rarr;</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://www.machinerypete.com/details/pickups/1954/ford/f100/22146591"
+         target="_blank" rel="noopener noreferrer"
+         class="listing-card-link" data-category="specialty">
+        <div class="listing-card-new">
+          <div class="listing-img-wrap">
+            <img src="images/ford-f100.jpeg"
+                 alt="1954 Ford F100">
+            <span class="listing-badge">Classic Truck</span>
+          </div>
+          <div class="listing-card-body">
+            <h3>1954 Ford F100</h3>
+            <p class="listing-price">$38,900</p>
+            <p class="listing-detail">Cedar Springs, MI</p>
+            <span class="listing-cta">View on Machinery Pete &rarr;</span>
+          </div>
+        </div>
+      </a>
+
+    </div><!-- /#listings-grid -->
 
   </div>
 
@@ -332,9 +722,9 @@
 
   <div class="container">
 
-    <div class="flex-between financing-strip">
+    <div class="financing-strip">
 
-      <div>
+      <div class="financing-strip-text">
 
         <p class="eyebrow">
           Financing & Equipment Protection
@@ -349,21 +739,27 @@
           are available through trusted industry partners.
         </p>
 
+        <div class="btn-group mt-lg">
+
+          <a href="financing.html" class="btn btn-primary">
+            Financing Information
+          </a>
+
+          <a href="https://app.financescope.com/peakcustomsolutions"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="btn btn-secondary">
+            Apply Now
+          </a>
+
+        </div>
+
       </div>
 
-      <div class="btn-group">
-
-        <a href="financing.html" class="btn btn-primary">
-          Financing Information
-        </a>
-
-        <a href="https://app.financescope.com/peakcustomsolutions"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="btn btn-secondary">
-          Apply Now
-        </a>
-
+      <div class="financing-logo-wrap">
+        <img src="images/finance-scope-logo.png"
+             alt="Finance Scope Logo"
+             class="financing-logo">
       </div>
 
     </div>
