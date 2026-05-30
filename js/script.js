@@ -136,21 +136,28 @@ if (lightbox) {
 const tabBtns = document.querySelectorAll('.tab-btn');
 const listingCards = document.querySelectorAll('.listing-card-link');
 
+function applyFilter(filter) {
+  tabBtns.forEach(b => {
+    b.classList.toggle('active', b.dataset.filter === filter);
+  });
+  listingCards.forEach(card => {
+    if (filter === 'all' || card.dataset.category === filter) {
+      card.classList.remove('hidden');
+    } else {
+      card.classList.add('hidden');
+    }
+  });
+}
+
 tabBtns.forEach(btn => {
   btn.addEventListener('click', () => {
-
-    tabBtns.forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-
-    const filter = btn.dataset.filter;
-
-    listingCards.forEach(card => {
-      if (filter === 'all' || card.dataset.category === filter) {
-        card.classList.remove('hidden');
-      } else {
-        card.classList.add('hidden');
-      }
-    });
-
+    applyFilter(btn.dataset.filter);
   });
 });
+
+// Activate filter from URL hash (e.g. listings.html#combines)
+if (tabBtns.length && location.hash) {
+  const hashFilter = location.hash.replace('#', '');
+  const matched = [...tabBtns].find(b => b.dataset.filter === hashFilter);
+  if (matched) applyFilter(hashFilter);
+}
