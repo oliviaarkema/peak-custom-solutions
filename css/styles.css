@@ -581,6 +581,18 @@ img {
   opacity: 0.9;
 }
 
+/* White stroke on filled buttons when on non-white backgrounds */
+.section-dark .btn-primary,
+.section-dark .btn-dark,
+.section-gray .btn-primary,
+.section-gray .btn-dark,
+.section-gray-image .btn-primary,
+.section-gray-image .btn-dark,
+.section-dark-image .btn-primary,
+.section-dark-image .btn-dark {
+  border: 2px solid var(--white);
+}
+
 /* =========================
    CARD SYSTEM
 ========================= */
@@ -598,7 +610,7 @@ img {
 
   border-radius: 8px;
 
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 6px 28px rgba(0, 0, 0, 0.14);
 
   transition: all var(--transition-speed) ease;
 }
