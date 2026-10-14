@@ -1861,3 +1861,16 @@ transition: opacity 2.5s ease-in-out;}
     margin-bottom: 32px;
   }
 }
+/* =========================
+   MARKETPLACE LOGOS
+========================= */
+
+.marketplace-card .image-white-background {
+  min-height: 160px;
+}
+
+.marketplace-card .platform-logo {
+  max-width: 100%;
+  max-height: 100px;
+  object-fit: contain;
+}
